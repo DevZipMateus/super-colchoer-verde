@@ -69,7 +69,10 @@ const Header = () => {
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center z-50 relative">
-          <div className="text-2xl font-bold text-primary">Contabilify</div>
+          <div className={cn(
+            "text-2xl font-bold transition-colors duration-300",
+            scrolled ? "text-primary" : "text-primary"
+          )}>Contabilify</div>
         </a>
 
         {/* Desktop Navigation */}
@@ -80,11 +83,11 @@ const Header = () => {
               href={item.href}
               className={cn(
                 'text-sm font-medium transition-colors hover:text-primary relative group',
-                scrolled ? 'text-gray-900' : 'text-gray-800'
+                scrolled ? 'text-gray-800' : 'text-gray-800'
               )}
             >
               {item.name}
-              <span className="absolute left-0 bottom--1 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute left-0 bottom-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
         </nav>
@@ -95,7 +98,11 @@ const Header = () => {
           className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 z-50"
           aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
         >
-          {isMenuOpen ? <X className="h-6 w-6 text-white" /> : <Menu className="h-6 w-6" />}
+          {isMenuOpen ? (
+            <X className={cn("h-6 w-6", scrolled ? "text-white" : "text-primary")} />
+          ) : (
+            <Menu className={cn("h-6 w-6", scrolled ? "text-primary" : "text-gray-800")} />
+          )}
         </button>
       </div>
 
@@ -103,13 +110,13 @@ const Header = () => {
       <div 
         className={cn(
           'fixed inset-0 z-40 transform transition-all duration-300 ease-in-out md:hidden',
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         )}
       >
         <div 
           className="h-full flex flex-col"
           style={{
-            background: 'rgba(30, 41, 59, 0.8)',
+            background: 'rgba(30, 41, 59, 0.85)',
             backdropFilter: 'blur(10px)'
           }}
         >
