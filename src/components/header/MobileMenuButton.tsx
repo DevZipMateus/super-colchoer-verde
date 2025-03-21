@@ -13,7 +13,7 @@ const MobileMenuButton = ({ isMenuOpen, toggleMenu, scrolled }: MobileMenuButton
     <button 
       onClick={toggleMenu} 
       className={cn(
-        "md:hidden flex items-center justify-center rounded-full p-2 z-50",
+        "md:hidden flex items-center justify-center rounded-full p-3 z-50",
         "focus:outline-none transition-colors duration-200",
         scrolled 
           ? "bg-primary/10 text-primary hover:bg-primary/20"
@@ -22,9 +22,9 @@ const MobileMenuButton = ({ isMenuOpen, toggleMenu, scrolled }: MobileMenuButton
       aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
     >
       {isMenuOpen ? (
-        <X className="h-6 w-6" />
+        <X className="h-7 w-7" />
       ) : (
-        <Menu className="h-6 w-6" />
+        <Menu className="h-7 w-7" />
       )}
     </button>
   );
