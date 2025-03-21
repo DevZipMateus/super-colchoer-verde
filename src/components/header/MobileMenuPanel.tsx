@@ -32,12 +32,13 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
 
       {/* Menu Items */}
       <nav className="px-6 pt-8 pb-8 overflow-y-auto h-[calc(100%-82px)]">
-        <ul className="space-y-8">
+        <ul className="space-y-5">
           {menuItems.map((item) => (
             <li key={item.name}>
               <a
                 href={item.href}
-                className="text-xl font-medium text-gray-800 hover:text-primary transition-colors block py-2"
+                className="text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 
+                           hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary"
                 onClick={onClose}
               >
                 {item.name}
@@ -51,7 +52,8 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
           <p className="text-md text-gray-500 mb-3">Entre em contato conosco</p>
           <a 
             href="tel:+5500999999999" 
-            className="text-xl text-primary hover:text-primary/80 font-medium block py-2"
+            className="text-xl text-primary hover:text-primary/80 font-medium block py-2
+                       transition-all duration-200 hover:translate-x-1 hover:scale-[1.02]"
           >
             (00) 99999-9999
           </a>
