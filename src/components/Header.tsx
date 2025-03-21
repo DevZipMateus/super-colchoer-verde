@@ -3,6 +3,12 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { 
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,88 +69,135 @@ const Header = () => {
   ];
 
   return (
-    <header className={cn(
-      'fixed w-full z-50 transition-all duration-300 ease-in-out py-4',
-      scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent'
-    )}>
+    <header 
+      className={cn(
+        'fixed w-full z-50 transition-all duration-300 ease-in-out',
+        scrolled 
+          ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' 
+          : 'bg-transparent py-4'
+      )}
+    >
       <div className="container mx-auto px-4 flex justify-between items-center">
+        {/* Logo */}
         <a href="#" className="flex items-center z-50 relative">
           <div className={cn(
             "text-2xl font-bold transition-colors duration-300",
             scrolled ? "text-primary" : "text-primary"
-          )}>Contabilify</div>
+          )}>
+            Contabilify
+          </div>
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {menuItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={cn(
-                'text-sm font-medium transition-colors hover:text-primary relative group',
-                scrolled ? 'text-gray-800' : 'text-gray-800'
-              )}
-            >
-              {item.name}
-              <span className="absolute left-0 bottom-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
-            </a>
-          ))}
-        </nav>
+        <NavigationMenu className="hidden md:flex">
+          <NavigationMenuList className="flex gap-8">
+            {menuItems.map((item) => (
+              <NavigationMenuItem key={item.name}>
+                <a
+                  href={item.href}
+                  className={cn(
+                    'text-sm font-medium relative inline-flex items-center transition-colors duration-200',
+                    'hover:text-primary focus:text-primary',
+                    scrolled ? 'text-gray-800' : 'text-gray-800',
+                    'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0',
+                    'after:bg-primary after:transition-all after:duration-300',
+                    'hover:after:w-full focus:after:w-full'
+                  )}
+                >
+                  {item.name}
+                </a>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
 
         {/* Mobile Menu Button */}
         <button 
           onClick={toggleMenu} 
-          className="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 z-50"
+          className={cn(
+            "md:hidden flex items-center justify-center rounded-full p-2 z-50",
+            "focus:outline-none transition-colors duration-200",
+            scrolled 
+              ? "bg-primary/10 text-primary hover:bg-primary/20"
+              : "bg-white/20 backdrop-blur-sm text-primary hover:bg-white/30"
+          )}
           aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
         >
           {isMenuOpen ? (
-            <X className={cn("h-6 w-6", scrolled ? "text-white" : "text-primary")} />
+            <X className="h-6 w-6" />
           ) : (
-            <Menu className={cn("h-6 w-6", scrolled ? "text-primary" : "text-gray-800")} />
+            <Menu className="h-6 w-6" />
           )}
         </button>
       </div>
 
-      {/* Mobile Menu - Glass-morphism style */}
+      {/* Mobile Menu Overlay */}
       <div 
         className={cn(
-          'fixed inset-0 z-40 transform transition-all duration-300 ease-in-out md:hidden',
-          isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+          'fixed inset-0 z-40 transition-all duration-300 ease-in-out md:hidden',
+          isMenuOpen 
+            ? 'opacity-100 pointer-events-auto' 
+            : 'opacity-0 pointer-events-none'
         )}
+        onClick={() => setIsMenuOpen(false)}
+        aria-hidden="true"
       >
         <div 
-          className="h-full flex flex-col"
-          style={{
-            background: 'rgba(30, 41, 59, 0.85)',
-            backdropFilter: 'blur(10px)'
-          }}
-        >
-          <div className="flex flex-col items-center justify-center h-full space-y-8 py-20">
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={cn(
-                  'text-2xl font-medium text-white hover:text-primary transition-all transform hover:scale-105',
-                  'px-6 py-2 relative group'
-                )}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="absolute left-0 bottom-0 h-0.5 bg-primary w-0 group-hover:w-full transition-all duration-300"></span>
-                {item.name}
-              </a>
-            ))}
-          </div>
+          className={cn(
+            "absolute inset-0 bg-slate-900/60 backdrop-blur-sm",
+            isMenuOpen ? "opacity-100" : "opacity-0",
+            "transition-opacity duration-300"
+          )}
+        />
+      </div>
 
-          {/* Bottom section with contact or additional links */}
-          <div className="mt-auto mb-10 text-center">
-            <p className="text-white/80 text-sm">Entre em contato conosco</p>
-            <a href="tel:+5500999999999" className="text-white hover:text-primary text-lg transition-colors">
+      {/* Mobile Menu Panel */}
+      <div 
+        className={cn(
+          'fixed top-0 right-0 bottom-0 z-40 w-full max-w-xs bg-white shadow-xl',
+          'transform transition-all duration-300 ease-in-out md:hidden',
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        )}
+      >
+        {/* Menu Header */}
+        <div className="flex items-center justify-between p-4 border-b">
+          <div className="text-xl font-bold text-primary">Contabilify</div>
+          <button 
+            onClick={() => setIsMenuOpen(false)}
+            className="p-2 rounded-full hover:bg-gray-100 text-gray-500"
+            aria-label="Fechar menu"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        </div>
+
+        {/* Menu Items */}
+        <nav className="px-4 pt-6 pb-8 overflow-y-auto h-[calc(100%-70px)]">
+          <ul className="space-y-6">
+            {menuItems.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  className="text-lg font-medium text-gray-800 hover:text-primary transition-colors block py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Contact Info */}
+          <div className="mt-10 pt-6 border-t border-gray-100">
+            <p className="text-sm text-gray-500 mb-2">Entre em contato conosco</p>
+            <a 
+              href="tel:+5500999999999" 
+              className="text-primary hover:text-primary/80 font-medium block py-2"
+            >
               (00) 99999-9999
             </a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );
