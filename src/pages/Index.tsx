@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -10,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
-    // Smooth scroll implementation
+    // Smooth scroll implementation with reduced offset for tighter sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -22,7 +23,7 @@ const Index = () => {
         if (!targetElement) return;
 
         window.scrollTo({
-          top: targetElement.offsetTop - 80, // Adjust for header height
+          top: targetElement.offsetTop - 70, // Reduced offset for tighter layout
           behavior: 'smooth'
         });
       });

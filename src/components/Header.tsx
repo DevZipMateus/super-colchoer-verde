@@ -63,19 +63,29 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Updated with glass-morphism */}
       <div 
         className={cn(
-          'fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out md:hidden pt-20',
+          'fixed inset-0 backdrop-blur-md bg-slate-900/50 z-40 transform transition-transform duration-300 ease-in-out md:hidden',
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
-        <nav className="flex flex-col items-center space-y-6 p-6">
+        <div className="flex justify-end p-4">
+          <button 
+            onClick={toggleMenu} 
+            className="p-2 rounded-full bg-white/10 backdrop-blur-sm"
+            aria-label="Fechar menu"
+          >
+            <X className="h-6 w-6 text-white" />
+          </button>
+        </div>
+        
+        <nav className="flex flex-col items-center space-y-6 p-6 mt-4">
           {['Início', 'Sobre Nós', 'Serviços', 'Planos', 'Contato'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
-              className="text-xl font-medium hover:text-primary"
+              className="text-xl font-medium text-white hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
               {item}
