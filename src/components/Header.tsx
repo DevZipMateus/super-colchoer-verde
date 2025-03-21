@@ -7,7 +7,6 @@ import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuItem,
-  NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 
 const Header = () => {
@@ -79,7 +78,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="flex items-center z-50 relative">
+        <a href="#" className="flex items-center z-10 relative">
           <div className={cn(
             "text-2xl font-bold transition-colors duration-300",
             scrolled ? "text-primary" : "text-primary"
@@ -134,28 +133,18 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       <div 
         className={cn(
-          'fixed inset-0 z-40 transition-all duration-300 ease-in-out md:hidden',
-          isMenuOpen 
-            ? 'opacity-100 pointer-events-auto' 
-            : 'opacity-0 pointer-events-none'
+          'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300',
+          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
         onClick={() => setIsMenuOpen(false)}
         aria-hidden="true"
-      >
-        <div 
-          className={cn(
-            "absolute inset-0 bg-slate-900/60 backdrop-blur-sm",
-            isMenuOpen ? "opacity-100" : "opacity-0",
-            "transition-opacity duration-300"
-          )}
-        />
-      </div>
+      />
 
       {/* Mobile Menu Panel */}
       <div 
         className={cn(
           'fixed top-0 right-0 bottom-0 z-40 w-full max-w-xs bg-white shadow-xl',
-          'transform transition-all duration-300 ease-in-out md:hidden',
+          'transform transition-transform duration-300 ease-in-out md:hidden',
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
       >
