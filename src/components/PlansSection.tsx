@@ -1,5 +1,7 @@
+
 import PlanCard from './PlanCard';
 import AnimatedSection from './AnimatedSection';
+
 const PlansSection = () => {
   const plans = [{
     title: "MEI",
@@ -20,7 +22,9 @@ const PlansSection = () => {
     features: ["Contabilidade completa", "Planejamento tributário", "Folha de pagamento (até 15 funcionários)", "Consultoria mensal", "Relatórios gerenciais mensais", "Atendimento prioritário"],
     isPopular: false
   }];
-  return <section id="planos" className="bg-white py-0">
+
+  return (
+    <section id="planos" className="bg-white py-0">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Planos</h2>
@@ -30,9 +34,17 @@ const PlansSection = () => {
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {plans.map((plan, index) => <AnimatedSection key={plan.title} animation="fade-in-up" delay={index * 150}>
-              <PlanCard title={plan.title} price={plan.price} description={plan.description} features={plan.features} isPopular={plan.isPopular} />
-            </AnimatedSection>)}
+          {plans.map((plan, index) => (
+            <AnimatedSection key={plan.title} animation="fade-in-up" delay={index * 150}>
+              <PlanCard 
+                title={plan.title} 
+                price={plan.price} 
+                description={plan.description} 
+                features={plan.features} 
+                isPopular={plan.isPopular} 
+              />
+            </AnimatedSection>
+          ))}
         </div>
 
         <AnimatedSection className="mt-16 text-center bg-gray-50 rounded-xl p-8">
@@ -46,6 +58,8 @@ const PlansSection = () => {
           </a>
         </AnimatedSection>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default PlansSection;
