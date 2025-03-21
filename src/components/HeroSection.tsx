@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section 
       id="início" 
-      className="relative min-h-screen flex items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden"
+      className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-r from-blue-50 to-slate-50 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -15,8 +15,8 @@ const HeroSection = () => {
         <div className="absolute bottom-1/3 right-1/3 w-32 h-32 md:w-40 md:h-40 rounded-full bg-blue-200/20"></div>
       </div>
 
-      <div className="container mx-auto px-4 pt-20 z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection animation="fade-in-up" className="space-y-6">
             <span className="inline-block text-sm font-semibold py-1 px-3 bg-primary/10 text-primary rounded-full">
               Contabilidade Moderna e Eficiente
@@ -57,10 +57,10 @@ const HeroSection = () => {
             </div>
           </AnimatedSection>
           
-          <AnimatedSection animation="fade-in" delay={300} className="hidden md:block">
+          <AnimatedSection animation="fade-in" delay={300} className="hidden md:block -mt-16">
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-64 h-64 bg-primary/10 rounded-full filter blur-xl"></div>
-              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-200 rounded-full filter blur-xl"></div>
+              <div className="absolute -top-12 -left-8 w-64 h-64 bg-primary/10 rounded-full filter blur-xl"></div>
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-blue-200 rounded-full filter blur-xl"></div>
               <div className="relative z-10 bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-1 transform transition-all duration-500 hover:scale-[1.01] hover:shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" 

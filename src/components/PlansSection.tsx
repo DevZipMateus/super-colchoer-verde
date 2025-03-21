@@ -24,7 +24,7 @@ const PlansSection = () => {
   }];
 
   return (
-    <section id="planos" className="bg-white py-0">
+    <section id="planos" className="bg-white py-16">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Planos</h2>
