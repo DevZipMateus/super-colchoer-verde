@@ -43,9 +43,11 @@ const SuperHeader = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl md:text-3xl font-heading font-black text-primary">
-            Super Colchões
-          </h1>
+          <img 
+            src="/lovable-uploads/bca5d742-c756-4a30-b248-b54e13f5badd.png" 
+            alt="Super Colchões - Uma escolha inteligente" 
+            className="h-12 w-auto"
+          />
         </div>
 
         {/* Desktop Menu */}
