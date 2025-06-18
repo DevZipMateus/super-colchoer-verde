@@ -19,6 +19,7 @@ const SuperHeader = () => {
     { name: 'Início', href: '#inicio' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#servicos' },
+    { name: 'Catálogo', href: '#catalogo' },
     { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Localização', href: '#localizacao' },
     { name: 'Contato', href: '#contato' }
