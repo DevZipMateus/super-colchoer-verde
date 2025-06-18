@@ -1,0 +1,25 @@
+
+User-agent: *
+Allow: /
+
+# Permitir acesso a todos os arquivos importantes
+Allow: /sitemap.xml
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.svg
+
+# Bloquear apenas diretórios administrativos (se existirem no futuro)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+
+# Sitemap
+Sitemap: https://supercolchoes.com.br/sitemap.xml
+
+# Crawl-delay para ser respeitoso com os bots
+Crawl-delay: 1
