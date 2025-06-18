@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { Link } from 'react-router-dom';
 
 const SuperHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ const SuperHeader = () => {
     { name: 'Início', href: '#inicio' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#servicos' },
+    { name: 'Catálogo', href: '#catalogo' },
     { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Localização', href: '#localizacao' },
     { name: 'Contato', href: '#contato' }
@@ -26,9 +28,24 @@ const SuperHeader = () => {
 
   const handleMenuClick = (href: string) => {
     setIsMenuOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    
+    // Se for o catálogo, redirecionar para a página principal com scroll para a seção
+    if (href === '#catalogo') {
+      // Se já estiver na página principal, apenas fazer scroll
+      if (window.location.pathname === '/' || window.location.pathname === '/super') {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // Se estiver em outra página, redirecionar para a página principal
+        window.location.href = '/' + href;
+      }
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 

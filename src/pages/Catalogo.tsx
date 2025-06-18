@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ChevronLeft, ChevronRight, X, MessageCircle } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Catalogo = () => {
@@ -173,8 +172,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Conjunto Castor Deluxe</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Conjunto%20Castor%20Deluxe" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -188,8 +186,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Pillow Top</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Pillow%20Top" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -203,8 +200,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Sofa cama</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Sofa%20cama" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -218,8 +214,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Colchão Textured</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Colch%C3%A3o%20Textured" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -233,8 +228,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Travesseiro NASA Cervical</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Travesseiro%20NASA%20Cervical" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -248,8 +242,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Conjunto Box Maxspring</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Conjunto%20Box%20Maxspring" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -263,8 +256,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Exclusiva Castor</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Exclusiva%20Castor" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -278,8 +270,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Móveis para Sala</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20M%C3%B3veis%20para%20Sala" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -293,8 +284,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Variedade de Colchões</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Variedade%20de%20Colch%C3%B5es" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -308,8 +298,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Moderna</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Moderna" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -323,8 +312,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Hauzestern Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Hauzestern%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -338,8 +326,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Tecnologia Multicamadas</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Tecnologia%20Multicamadas" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -353,8 +340,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Zuhause Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Zuhause%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -368,8 +354,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas individuias</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20individuias" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -383,8 +368,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Travesseiro Real Látex</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Travesseiro%20Real%20L%C3%A1tex" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -398,8 +382,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Pillow Top</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Pillow%20Top" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -413,8 +396,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Poltrona Reclinável</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Poltrona%20Reclin%C3%A1vel" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -428,8 +410,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -443,8 +424,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Individuais Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Individuais%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -458,8 +438,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Luxo</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Luxo" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -473,8 +452,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Branco</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Branco" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -488,8 +466,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Poltrona Relax Bege</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Poltrona%20Relax%20Bege" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -503,8 +480,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box Baú Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20Ba%C3%BA%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -518,8 +494,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box Baú Branco</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20Ba%C3%BA%20Branco" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -533,8 +508,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Sofá-Cama Premium</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Sof%C3%A1-Cama%20Premium" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -548,8 +522,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box com Cama Auxiliar</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20com%20Cama%20Auxiliar" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
@@ -563,8 +536,7 @@ const Catalogo = () => {
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Colchão de Espuma Ortopédico</p>
               <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Colch%C3%A3o%20de%20Espuma%20Ortop%C3%A9dico" target="_blank" rel="noopener noreferrer">
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
-                  <MessageCircle className="w-4 h-4" />
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   Solicitar Orçamento
                 </Button>
               </a>
