@@ -47,6 +47,16 @@ const SuperServicesSection = () => {
             Nossos Serviços
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
+          
+          {/* Imagem adicionada abaixo do título */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/122ebf19-32bf-4126-8f67-d46a95bb7be5.png" 
+              alt="Super Colchões - 39 anos de credibilidade" 
+              className="h-32 w-auto"
+            />
+          </div>
+          
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Oferecemos serviços diferenciados para garantir a melhor experiência na compra do seu colchão
           </p>
