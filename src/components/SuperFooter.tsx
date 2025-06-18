@@ -1,5 +1,5 @@
 const SuperFooter = () => {
-  return <footer className="bg-gray-900 text-white py-12">
+  return <footer className="text-white py-12 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
@@ -7,7 +7,7 @@ const SuperFooter = () => {
             <h3 className="font-heading font-bold text-2xl text-primary">
               Super Colchões
             </h3>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="leading-relaxed text-slate-950">
               Há 39 anos cuidando do bem-estar e qualidade de vida de nossos clientes em Santa Maria-RS.
             </p>
             <p className="text-primary font-medium">
@@ -20,18 +20,18 @@ const SuperFooter = () => {
             <h4 className="font-heading font-bold text-lg text-gray-50">Contato</h4>
             <div className="space-y-2">
               <p className="text-gray-300">
-                <span className="font-medium text-slate-50">Telefone:</span><br />
-                <a href="tel:055-3221-8035" className="hover:text-primary transition-colors">
+                <span className="font-medium text-[s0DA456] text-[#0da456]">Telefone:</span><br />
+                <a href="tel:055-3221-8035" className="hover:text-primary text-primary ">
                   (55) 3221-8035
                 </a>
               </p>
               <p className="text-gray-300">
                 <span className="font-medium text-gray-50">WhatsApp:</span><br />
-                <a href="https://wa.me/5555991630055" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                <a href="https://wa.me/5555991630055" target="_blank" rel="noopener noreferrer" className="hover:text-primary text-primary ">
                   (55) 99163-0055
                 </a>
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-950">
                 <span className="font-medium text-slate-50">E-mail:</span><br />
                 <a href="mailto:supercolchoes@yahoo.com.br" className="hover:text-primary transition-colors">
                   supercolchoes@yahoo.com.br
@@ -42,18 +42,18 @@ const SuperFooter = () => {
 
           {/* Localização */}
           <div className="space-y-4">
-            <h4 className="font-heading font-bold text-lg text-gray-50">Localização</h4>
+            <h4 className="font-heading font-bold text-lg text-[#0ca556]">Localização</h4>
             <div className="text-gray-300">
-              <p className="text-gray-50">Esquina com a - Rua Riachuelo</p>
-              <p className="text-gray-50">R. Tuiuti, 224 - Centro</p>
-              <p className="text-gray-50">Santa Maria - RS</p>
-              <p className="text-gray-50">CEP: 97050-010</p>
+              <p className="text-gray-950">Esquina com a - Rua Riachuelo</p>
+              <p className="text-slate-950">R. Tuiuti, 224 - Centro</p>
+              <p className="text-slate-950">Santa Maria - RS</p>
+              <p className="text-slate-950">CEP: 97050-010</p>
             </div>
           </div>
 
           {/* Redes Sociais */}
           <div className="space-y-4">
-            <h4 className="font-heading font-bold text-lg">Redes Sociais</h4>
+            <h4 className="font-heading font-bold text-lg text-[#0ca254]">Redes Sociais</h4>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/supercolchoesumaescolhainteligente" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ const SuperFooter = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">© 2025 Super Colchões. Todos os direitos reservados.</p>
+            <p className="text-sm text-gray-950">© 2025 Super Colchões. Todos os direitos reservados.</p>
             <p className="text-gray-300 text-sm mt-2 md:mt-0">
               39 anos de tradição em Santa Maria-RS
             </p>
