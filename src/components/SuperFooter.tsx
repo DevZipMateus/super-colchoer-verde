@@ -77,7 +77,7 @@ const SuperFooter = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-950">© 2025 Super Colchões. Todos os direitos reservados.</p>
-            <p className="text-gray-300 text-sm mt-2 md:mt-0">
+            <p className="text-sm mt-2 md:mt-0 text-slate-950">
               39 anos de tradição em Santa Maria-RS
             </p>
           </div>
