@@ -23,21 +23,21 @@ const SuperCatalogSection = () => {
   ];
 
   return (
-    <section id="catalogo" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-heading font-bold mb-6 text-4xl md:text-5xl lg:text-6xl">
+    <section id="catalogo" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 xl:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-heading font-bold mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             Catálogo
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-16 sm:w-20 h-1 bg-primary mx-auto mb-6 sm:mb-8"></div>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
             Conheça nossa variedade de produtos de alta qualidade
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto mb-12">
+        <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
           {/* Grid de imagens responsiva */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {featuredImages.map((image, index) => (
               <div key={index} className="relative overflow-hidden rounded-xl shadow-lg bg-white group">
                 <div className="aspect-[4/3] w-full">
@@ -56,9 +56,9 @@ const SuperCatalogSection = () => {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center px-4 sm:px-0">
           <Link to="/catalogo">
-            <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 hover:scale-105 transition-transform duration-200">
+            <Button className="btn-primary text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-3 md:py-4 hover:scale-105 transition-transform duration-200 touch-manipulation">
               Venha conferir nosso catálogo
             </Button>
           </Link>
