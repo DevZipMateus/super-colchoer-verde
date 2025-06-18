@@ -10,9 +10,9 @@ const SuperHeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-6">
-              <h1 className="font-heading font-black leading-tight">
+              <h1 className="font-heading font-black leading-tight text-6xl">
                 Super Colchões <br />
-                <span className="text-primary">especialistas em colchões há mais de 20 anos</span>
+                <span className="text-3xl text-[#000200]">especialistas em colchões há mais de 20 anos</span>
               </h1>
             </div>
 
