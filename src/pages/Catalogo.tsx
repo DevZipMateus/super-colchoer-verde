@@ -1,8 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const Catalogo = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const catalogImages = [{
     src: "/lovable-uploads/b852ea04-4205-475a-b72e-0c2d752bb988.png",
     alt: "Colchão Castor com almofadas vermelhas",
@@ -113,6 +119,7 @@ const Catalogo = () => {
     description: "Colchão de espuma de alta densidade com padrão decorativo elegante."
   }];
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
   const openModal = (index: number) => {
     setSelectedImage(index);
   };
@@ -133,6 +140,7 @@ const Catalogo = () => {
     const titles = ["Conjunto Castor Deluxe", "Colchão Estruturado", "Colchão Floral Premium", "Colchão Textured", "Travesseiro Premium", "Sistema Completo", "Castor Decorativo", "Móveis para Sala", "Variedade de Colchões", "Linha Moderna", "Hauzestern Premium", "Tecnologia Multicamadas", "Zuhaus Stern", "Linha Decorativa", "Travesseiro Real Látex", "Linha Relief", "Poltrona Reclinável", "Molas Ensacadas Premium", "Quarto Moderno", "Linha Luxo", "Molas Ensacadas Branco", "Poltrona Relax Bege", "Box Baú Premium", "Box Baú Branco", "Sofá-Cama Premium", "Box com Cama Auxiliar", "Colchão de Espuma Premium"];
     return titles[index] || "Produto";
   };
+
   return <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm py-4">
