@@ -84,6 +84,34 @@ const SuperCatalogSection = () => {
     {
       src: "/lovable-uploads/dbcaf81b-956a-46e3-b0d7-ab32cf30af11.png",
       alt: "Colchão de molas ensacadas individuais - ambiente luxo"
+    },
+    {
+      src: "/lovable-uploads/586c1b99-c4ec-4f62-b516-4888bd781d0a.png",
+      alt: "Colchão de molas ensacadas individuais - branco"
+    },
+    {
+      src: "/lovable-uploads/43488edc-462a-4fc6-bbbd-7dfd8e1120be.png",
+      alt: "Poltrona reclinável bege"
+    },
+    {
+      src: "/lovable-uploads/f2fa3dde-4033-4955-a30c-f190eb2364b4.png",
+      alt: "Box baú marrom com abertura"
+    },
+    {
+      src: "/lovable-uploads/939809b3-4ff6-4e4e-bb46-0aca85a7646c.png",
+      alt: "Box baú branco aberto"
+    },
+    {
+      src: "/lovable-uploads/41cabb28-8bb8-4261-a505-0c9f91bc7f2e.png",
+      alt: "Sofá-cama com colchão estendido"
+    },
+    {
+      src: "/lovable-uploads/28259c71-17b8-429c-9761-47596305758e.png",
+      alt: "Conjunto box com cama auxiliar"
+    },
+    {
+      src: "/lovable-uploads/9017e817-369c-4f48-aa8b-a5436e8fdac5.png",
+      alt: "Colchão de espuma com padrão decorativo"
     }
   ];
 
