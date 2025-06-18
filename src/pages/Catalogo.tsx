@@ -422,7 +422,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/9017e817-369c-4f48-aa8b-a5436e8fdac5.png" alt="Colchão de espuma com padrão decorativo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão de Espuma Premium</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão de Espuma Ortopédico</p>
               
             </div>
           </div>
