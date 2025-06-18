@@ -95,15 +95,15 @@ const SuperTestimonialsSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-lg text-gray-700 mb-6">
-            Quer ser o próximo cliente satisfeito?
+            Quer ver mais depoimentos dos nossos clientes?
           </p>
           <a 
-            href="https://wa.me/5555991630055" 
+            href="https://www.google.com/search?q=super+colch%C3%B5es&oq=super+colch%C3%B5es&aqs=chrome..69i57j35i39j0i22i30l3j69i60j69i61l2.4320j1j4&sourceid=chrome&ie=UTF-8#lrd=0x9503cb6afb0b59b3:0x5e1f0cbaa2dfe89,1,,," 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Fale conosco agora
+            Veja mais comentários
           </a>
         </div>
       </div>
