@@ -1,7 +1,5 @@
-
 const SuperAboutSection = () => {
-  return (
-    <section id="sobre" className="py-20 bg-secondary/20">
+  return <section id="sobre" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="font-heading font-bold mb-6">
@@ -35,29 +33,17 @@ const SuperAboutSection = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="text-center p-6 bg-white rounded-xl shadow-md">
-                <div className="text-2xl font-heading font-bold text-primary mb-2">39+</div>
-                <p className="text-gray-600">Anos de tradição</p>
-              </div>
-              <div className="text-center p-6 bg-white rounded-xl shadow-md">
-                <div className="text-2xl font-heading font-bold text-primary mb-2">Multi</div>
-                <p className="text-gray-600">Marcas disponíveis</p>
-              </div>
+              
+              
             </div>
           </div>
 
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full bg-primary/10 rounded-2xl"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Loja Super Colchões em Santa Maria - Ambiente familiar e acolhedor"
-              className="relative z-10 rounded-2xl shadow-xl w-full h-auto object-cover"
-            />
+            <img alt="Loja Super Colchões em Santa Maria - Ambiente familiar e acolhedor" className="relative z-10 rounded-2xl shadow-xl w-full h-auto object-cover" src="/lovable-uploads/f69098ac-0794-4151-85d7-25a5b99c7302.png" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SuperAboutSection;
