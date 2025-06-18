@@ -9,163 +9,136 @@ const Catalogo = () => {
     {
       src: "/lovable-uploads/b852ea04-4205-475a-b72e-0c2d752bb988.png",
       alt: "Colchão Castor com almofadas vermelhas",
-      title: "Conjunto Castor Deluxe",
       description: "Colchão premium com almofadas decorativas, ideal para um sono reparador."
     },
     {
       src: "/lovable-uploads/a4ac202f-3425-408b-bfe9-33453ed3aa12.png",
       alt: "Colchão branco com estrutura",
-      title: "Colchão Estruturado",
       description: "Colchão com tecnologia avançada de suporte e conforto."
     },
     {
       src: "/lovable-uploads/ef67d67d-14b5-4803-aa43-0589463059bb.png",
       alt: "Colchão com padrão floral",
-      title: "Colchão Floral Premium",
       description: "Design elegante com padrão floral, combinando beleza e conforto."
     },
     {
       src: "/lovable-uploads/8d41b138-9898-4424-9c7b-4771e7f7c3ec.png",
       alt: "Detalhe do colchão com padrão em relevo",
-      title: "Colchão Textured",
       description: "Superfície texturizada para melhor ventilação e conforto."
     },
     {
       src: "/lovable-uploads/d2fac790-b255-48ae-b8b7-8a463adf8e76.png",
       alt: "Travesseiro com embalagem",
-      title: "Travesseiro Premium",
       description: "Travesseiros de alta qualidade para complementar seu sono."
     },
     {
       src: "/lovable-uploads/883f4f60-86ff-4325-bee6-f8f80b650049.png",
       alt: "Colchão com base estruturada",
-      title: "Sistema Completo",
       description: "Colchão com base estruturada para máximo suporte."
     },
     {
       src: "/lovable-uploads/86b9e010-23d7-4fe3-b932-32c6f4708c89.png",
       alt: "Colchão Castor com padrão decorativo",
-      title: "Castor Decorativo",
       description: "Colchão Castor com padrão decorativo exclusivo."
     },
     {
       src: "/lovable-uploads/029608f7-9f0d-46a6-be16-6c0c9e348205.png",
       alt: "Ambiente da loja com sofás",
-      title: "Móveis para Sala",
       description: "Ambiente completo para sua sala de estar."
     },
     {
       src: "/lovable-uploads/7ac72a69-664e-4ed9-af48-5567bf7b7d97.png",
       alt: "Colchões embalados na loja",
-      title: "Variedade de Colchões",
       description: "Grande variedade de colchões disponíveis em nossa loja."
     },
     {
       src: "/lovable-uploads/823e60a2-a086-486d-a82b-36ade0884272.png",
       alt: "Colchão moderno em exposição",
-      title: "Linha Moderna",
       description: "Design moderno e contemporâneo para ambientes atuais."
     },
     {
       src: "/lovable-uploads/bee8ffa0-04a7-4648-b422-392fae393b45.png",
       alt: "Colchão Hauzestern em exposição",
-      title: "Hauzestern Premium",
       description: "Colchão Hauzestern de alta qualidade em ambiente de exposição."
     },
     {
       src: "/lovable-uploads/b127118b-f790-4fbf-914e-0cff22ecf09f.png",
       alt: "Detalhe das camadas do colchão",
-      title: "Tecnologia Multicamadas",
       description: "Visualize a tecnologia avançada em camadas dos nossos colchões."
     },
     {
       src: "/lovable-uploads/736ea669-8477-485f-9d71-39ac76a1206a.png",
       alt: "Colchão Zuhaus Stern",
-      title: "Zuhaus Stern",
       description: "Colchão Zuhaus Stern com tecnologia alemã de ponta."
     },
     {
       src: "/lovable-uploads/e1a9a8bc-a884-4863-be76-c6213f6ab821.png",
       alt: "Colchão com padrão decorativo na loja",
-      title: "Linha Decorativa",
       description: "Colchões com padrões decorativos elegantes em exposição."
     },
     {
       src: "/lovable-uploads/71924c36-bc75-49a5-a9dc-fc66e35b8aaa.png",
       alt: "Travesseiro de látex",
-      title: "Travesseiro Real Látex",
       description: "Travesseiro de látex natural para máximo conforto."
     },
     {
       src: "/lovable-uploads/919e0308-62cb-4473-95cf-ee41c1053714.png",
       alt: "Colchão branco com detalhes em relevo",
-      title: "Linha Relief",
       description: "Colchão com detalhes em relevo para melhor ergonomia."
     },
     {
       src: "/lovable-uploads/4cb4bd30-9d00-4f71-b4f8-39fc40632fd4.png",
       alt: "Poltrona reclinável marrom",
-      title: "Poltrona Reclinável",
       description: "Poltrona reclinável em couro para máximo relaxamento."
     },
     {
       src: "/lovable-uploads/087d8c88-4489-4144-8a18-71898a5e157f.png",
       alt: "Colchão de molas ensacadas individuais - ambiente",
-      title: "Molas Ensacadas Premium",
       description: "Colchão de molas ensacadas individuais em ambiente sofisticado."
     },
     {
       src: "/lovable-uploads/8000ddc0-4cee-46ea-85c1-a3524f847b64.png",
       alt: "Colchão de molas ensacadas individuais - quarto moderno",
-      title: "Quarto Moderno",
       description: "Conjunto completo com colchão de molas ensacadas para quarto moderno."
     },
     {
       src: "/lovable-uploads/dbcaf81b-956a-46e3-b0d7-ab32cf30af11.png",
       alt: "Colchão de molas ensacadas individuais - ambiente luxo",
-      title: "Linha Luxo",
       description: "Colchão de molas ensacadas individuais em ambiente de luxo."
     },
     {
       src: "/lovable-uploads/586c1b99-c4ec-4f62-b516-4888bd781d0a.png",
       alt: "Colchão de molas ensacadas individuais - branco",
-      title: "Molas Ensacadas Branco",
       description: "Colchão de molas ensacadas individuais com acabamento branco elegante."
     },
     {
       src: "/lovable-uploads/43488edc-462a-4fc6-bbbd-7dfd8e1120be.png",
       alt: "Poltrona reclinável bege",
-      title: "Poltrona Relax Bege",
       description: "Poltrona reclinável em couro bege para momentos de relaxamento."
     },
     {
       src: "/lovable-uploads/f2fa3dde-4033-4955-a30c-f190eb2364b4.png",
       alt: "Box baú marrom com abertura",
-      title: "Box Baú Premium",
       description: "Box com sistema baú para otimizar o espaço do seu quarto."
     },
     {
       src: "/lovable-uploads/939809b3-4ff6-4e4e-bb46-0aca85a7646c.png",
       alt: "Box baú branco aberto",
-      title: "Box Baú Branco",
       description: "Box baú em acabamento branco com amplo espaço de armazenamento."
     },
     {
       src: "/lovable-uploads/41cabb28-8bb8-4261-a505-0c9f91bc7f2e.png",
       alt: "Sofá-cama com colchão estendido",
-      title: "Sofá-Cama Premium",
       description: "Sofá-cama com colchão de alta qualidade para visitas."
     },
     {
       src: "/lovable-uploads/28259c71-17b8-429c-9761-47596305758e.png",
       alt: "Conjunto box com cama auxiliar",
-      title: "Box com Cama Auxiliar",
       description: "Conjunto box com cama auxiliar, perfeito para otimizar espaço."
     },
     {
       src: "/lovable-uploads/9017e817-369c-4f48-aa8b-a5436e8fdac5.png",
       alt: "Colchão de espuma com padrão decorativo",
-      title: "Colchão de Espuma Premium",
       description: "Colchão de espuma de alta densidade com padrão decorativo elegante."
     }
   ];
@@ -190,6 +163,39 @@ const Catalogo = () => {
     if (selectedImage !== null) {
       setSelectedImage(selectedImage === catalogImages.length - 1 ? 0 : selectedImage + 1);
     }
+  };
+
+  const getProductTitle = (index: number) => {
+    const titles = [
+      "Conjunto Castor Deluxe",
+      "Colchão Estruturado", 
+      "Colchão Floral Premium",
+      "Colchão Textured",
+      "Travesseiro Premium",
+      "Sistema Completo",
+      "Castor Decorativo",
+      "Móveis para Sala",
+      "Variedade de Colchões",
+      "Linha Moderna",
+      "Hauzestern Premium",
+      "Tecnologia Multicamadas",
+      "Zuhaus Stern",
+      "Linha Decorativa",
+      "Travesseiro Real Látex",
+      "Linha Relief",
+      "Poltrona Reclinável",
+      "Molas Ensacadas Premium",
+      "Quarto Moderno",
+      "Linha Luxo",
+      "Molas Ensacadas Branco",
+      "Poltrona Relax Bege",
+      "Box Baú Premium",
+      "Box Baú Branco",
+      "Sofá-Cama Premium",
+      "Box com Cama Auxiliar",
+      "Colchão de Espuma Premium"
+    ];
+    return titles[index] || "Produto";
   };
 
   return (
@@ -231,7 +237,7 @@ const Catalogo = () => {
                 />
               </div>
               <div className="p-4 md:p-6">
-                <h3 className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">{image.title}</h3>
+                <h3 className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">{getProductTitle(index)}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">{image.description}</p>
               </div>
             </div>
@@ -291,7 +297,7 @@ const Catalogo = () => {
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 md:p-6">
-              <h3 className="font-bold text-lg md:text-xl mb-2">{catalogImages[selectedImage].title}</h3>
+              <h3 className="font-bold text-lg md:text-xl mb-2">{getProductTitle(selectedImage)}</h3>
               <p className="text-sm md:text-base opacity-90">{catalogImages[selectedImage].description}</p>
             </div>
           </div>
