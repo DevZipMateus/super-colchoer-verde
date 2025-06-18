@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -139,56 +140,58 @@ const SuperCatalogSection = () => {
     <section id="catalogo" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold mb-6 text-6xl">
+          <h2 className="font-heading font-bold mb-6 text-4xl md:text-5xl lg:text-6xl">
             Catálogo
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Conheça nossa variedade de produtos de alta qualidade
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto mb-12">
-          <div className="relative h-96 lg:h-[500px] overflow-hidden rounded-xl shadow-xl">
+        <div className="relative max-w-6xl mx-auto mb-12">
+          <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-xl shadow-xl">
             <img
               src={catalogImages[currentIndex].src}
               alt={catalogImages[currentIndex].alt}
-              className="w-full h-full object-cover transition-opacity duration-500"
+              className="w-full h-full object-contain md:object-cover transition-opacity duration-500 bg-white"
             />
             
             {/* Navigation buttons */}
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all duration-200"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-200 z-10"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
             </button>
             
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg transition-all duration-200"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-200 z-10"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
             </button>
           </div>
 
           {/* Indicators */}
-          <div className="flex justify-center mt-4 space-x-2">
-            {catalogImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                  index === currentIndex ? 'bg-primary' : 'bg-gray-300'
-                }`}
-              />
-            ))}
+          <div className="flex justify-center mt-4 space-x-2 overflow-x-auto pb-2">
+            <div className="flex space-x-2 min-w-max px-4">
+              {catalogImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-200 flex-shrink-0 ${
+                    index === currentIndex ? 'bg-primary' : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
         <div className="text-center">
           <Link to="/catalogo">
-            <Button className="btn-primary text-lg px-8 py-4">
+            <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
               Venha conferir nosso catálogo
             </Button>
           </Link>

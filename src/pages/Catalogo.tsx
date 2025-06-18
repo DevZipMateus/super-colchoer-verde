@@ -1,6 +1,7 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Catalogo = () => {
@@ -198,57 +199,57 @@ const Catalogo = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-medium">Voltar para o início</span>
+              <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="font-medium text-sm md:text-base">Voltar para o início</span>
             </Link>
-            <h1 className="font-heading font-bold text-3xl text-center">Catálogo Super Colchões</h1>
-            <div className="w-32"></div> {/* Spacer for alignment */}
+            <h1 className="font-heading font-bold text-xl md:text-2xl lg:text-3xl text-center">Catálogo Super Colchões</h1>
+            <div className="w-20 md:w-32"></div> {/* Spacer for alignment */}
           </div>
         </div>
       </header>
 
       {/* Catalog Grid */}
-      <main className="container mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+      <main className="container mx-auto px-4 py-8 md:py-12">
+        <div className="text-center mb-8 md:mb-12">
+          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Explore nossa coleção completa de colchões e produtos para o seu bem-estar
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {catalogImages.map((image, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
               onClick={() => openModal(index)}
             >
-              <div className="aspect-square overflow-hidden">
+              <div className="aspect-square overflow-hidden bg-gray-100">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-heading font-bold text-xl mb-2">{image.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{image.description}</p>
+              <div className="p-4 md:p-6">
+                <h3 className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">{image.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">{image.description}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Contact CTA */}
-        <div className="text-center mt-16 bg-white rounded-xl shadow-lg p-8">
-          <h2 className="font-heading font-bold text-2xl mb-4">Interessado em algum produto?</h2>
-          <p className="text-gray-700 mb-6">Entre em contato conosco para mais informações e preços</p>
+        <div className="text-center mt-12 md:mt-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
+          <h2 className="font-heading font-bold text-xl md:text-2xl mb-4">Interessado em algum produto?</h2>
+          <p className="text-gray-700 mb-6 text-sm md:text-base">Entre em contato conosco para mais informações e preços</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:055-3221-8035">
-              <Button className="btn-primary">
+              <Button className="btn-primary w-full sm:w-auto text-sm md:text-base">
                 Ligar agora: (55) 3221-8035
               </Button>
             </a>
             <a href="https://wa.me/5555991630055" target="_blank" rel="noopener noreferrer">
-              <Button className="btn-secondary">
+              <Button className="btn-secondary w-full sm:w-auto text-sm md:text-base">
                 WhatsApp: (55) 99163-0055
               </Button>
             </a>
@@ -259,37 +260,39 @@ const Catalogo = () => {
       {/* Modal */}
       {selectedImage !== null && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl max-h-[90vh] w-full">
+          <div className="relative max-w-7xl max-h-[95vh] w-full h-full flex items-center justify-center">
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2"
+              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2 md:p-3"
             >
-              ✕
+              <X className="w-5 h-5 md:w-6 md:h-6" />
             </button>
             
             <button
               onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2 md:p-3"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
             </button>
             
             <button
               onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-10 bg-black/50 rounded-full p-2 md:p-3"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
             </button>
 
-            <img
-              src={catalogImages[selectedImage].src}
-              alt={catalogImages[selectedImage].alt}
-              className="w-full h-full object-contain rounded-lg"
-            />
+            <div className="w-full h-full flex items-center justify-center p-4 md:p-8">
+              <img
+                src={catalogImages[selectedImage].src}
+                alt={catalogImages[selectedImage].alt}
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
             
-            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 rounded-b-lg">
-              <h3 className="font-bold text-lg">{catalogImages[selectedImage].title}</h3>
-              <p className="text-sm">{catalogImages[selectedImage].description}</p>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 md:p-6">
+              <h3 className="font-bold text-lg md:text-xl mb-2">{catalogImages[selectedImage].title}</h3>
+              <p className="text-sm md:text-base opacity-90">{catalogImages[selectedImage].description}</p>
             </div>
           </div>
         </div>
