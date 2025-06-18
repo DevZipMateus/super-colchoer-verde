@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -45,6 +44,46 @@ const SuperCatalogSection = () => {
     {
       src: "/lovable-uploads/823e60a2-a086-486d-a82b-36ade0884272.png",
       alt: "Colchão moderno em exposição"
+    },
+    {
+      src: "/lovable-uploads/bee8ffa0-04a7-4648-b422-392fae393b45.png",
+      alt: "Colchão Hauzestern em exposição"
+    },
+    {
+      src: "/lovable-uploads/b127118b-f790-4fbf-914e-0cff22ecf09f.png",
+      alt: "Detalhe das camadas do colchão"
+    },
+    {
+      src: "/lovable-uploads/736ea669-8477-485f-9d71-39ac76a1206a.png",
+      alt: "Colchão Zuhaus Stern"
+    },
+    {
+      src: "/lovable-uploads/e1a9a8bc-a884-4863-be76-c6213f6ab821.png",
+      alt: "Colchão com padrão decorativo na loja"
+    },
+    {
+      src: "/lovable-uploads/71924c36-bc75-49a5-a9dc-fc66e35b8aaa.png",
+      alt: "Travesseiro de látex"
+    },
+    {
+      src: "/lovable-uploads/919e0308-62cb-4473-95cf-ee41c1053714.png",
+      alt: "Colchão branco com detalhes em relevo"
+    },
+    {
+      src: "/lovable-uploads/4cb4bd30-9d00-4f71-b4f8-39fc40632fd4.png",
+      alt: "Poltrona reclinável marrom"
+    },
+    {
+      src: "/lovable-uploads/087d8c88-4489-4144-8a18-71898a5e157f.png",
+      alt: "Colchão de molas ensacadas individuais - ambiente"
+    },
+    {
+      src: "/lovable-uploads/8000ddc0-4cee-46ea-85c1-a3524f847b64.png",
+      alt: "Colchão de molas ensacadas individuais - quarto moderno"
+    },
+    {
+      src: "/lovable-uploads/dbcaf81b-956a-46e3-b0d7-ab32cf30af11.png",
+      alt: "Colchão de molas ensacadas individuais - ambiente luxo"
     }
   ];
 

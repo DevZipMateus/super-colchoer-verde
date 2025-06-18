@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -65,6 +64,66 @@ const Catalogo = () => {
       alt: "Colchão moderno em exposição",
       title: "Linha Moderna",
       description: "Design moderno e contemporâneo para ambientes atuais."
+    },
+    {
+      src: "/lovable-uploads/bee8ffa0-04a7-4648-b422-392fae393b45.png",
+      alt: "Colchão Hauzestern em exposição",
+      title: "Hauzestern Premium",
+      description: "Colchão Hauzestern de alta qualidade em ambiente de exposição."
+    },
+    {
+      src: "/lovable-uploads/b127118b-f790-4fbf-914e-0cff22ecf09f.png",
+      alt: "Detalhe das camadas do colchão",
+      title: "Tecnologia Multicamadas",
+      description: "Visualize a tecnologia avançada em camadas dos nossos colchões."
+    },
+    {
+      src: "/lovable-uploads/736ea669-8477-485f-9d71-39ac76a1206a.png",
+      alt: "Colchão Zuhaus Stern",
+      title: "Zuhaus Stern",
+      description: "Colchão Zuhaus Stern com tecnologia alemã de ponta."
+    },
+    {
+      src: "/lovable-uploads/e1a9a8bc-a884-4863-be76-c6213f6ab821.png",
+      alt: "Colchão com padrão decorativo na loja",
+      title: "Linha Decorativa",
+      description: "Colchões com padrões decorativos elegantes em exposição."
+    },
+    {
+      src: "/lovable-uploads/71924c36-bc75-49a5-a9dc-fc66e35b8aaa.png",
+      alt: "Travesseiro de látex",
+      title: "Travesseiro Real Látex",
+      description: "Travesseiro de látex natural para máximo conforto."
+    },
+    {
+      src: "/lovable-uploads/919e0308-62cb-4473-95cf-ee41c1053714.png",
+      alt: "Colchão branco com detalhes em relevo",
+      title: "Linha Relief",
+      description: "Colchão com detalhes em relevo para melhor ergonomia."
+    },
+    {
+      src: "/lovable-uploads/4cb4bd30-9d00-4f71-b4f8-39fc40632fd4.png",
+      alt: "Poltrona reclinável marrom",
+      title: "Poltrona Reclinável",
+      description: "Poltrona reclinável em couro para máximo relaxamento."
+    },
+    {
+      src: "/lovable-uploads/087d8c88-4489-4144-8a18-71898a5e157f.png",
+      alt: "Colchão de molas ensacadas individuais - ambiente",
+      title: "Molas Ensacadas Premium",
+      description: "Colchão de molas ensacadas individuais em ambiente sofisticado."
+    },
+    {
+      src: "/lovable-uploads/8000ddc0-4cee-46ea-85c1-a3524f847b64.png",
+      alt: "Colchão de molas ensacadas individuais - quarto moderno",
+      title: "Quarto Moderno",
+      description: "Conjunto completo com colchão de molas ensacadas para quarto moderno."
+    },
+    {
+      src: "/lovable-uploads/dbcaf81b-956a-46e3-b0d7-ab32cf30af11.png",
+      alt: "Colchão de molas ensacadas individuais - ambiente luxo",
+      title: "Linha Luxo",
+      description: "Colchão de molas ensacadas individuais em ambiente de luxo."
     }
   ];
 
