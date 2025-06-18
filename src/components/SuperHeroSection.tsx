@@ -16,21 +16,9 @@ const SuperHeroSection = () => {
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-6">
               <h1 className="font-heading font-black leading-tight">
-                Há 39 anos cuidando do seu <br />
-                <span className="text-primary">bem-estar</span>
+                Super Colchões <br />
+                <span className="text-primary">especialistas em colchões há mais de 20 anos</span>
               </h1>
-              
-              <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
-                A Super Colchões investe em produtos de alta qualidade, requinte e conforto. 
-                Pioneira no ramo de colchões em Santa Maria-RS.
-              </p>
-
-              <div className="inline-block">
-                <h2 className="text-2xl font-heading font-bold text-primary mb-2">
-                  Super colchões, uma escolha inteligente
-                </h2>
-                <div className="w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
-              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -47,27 +35,27 @@ const SuperHeroSection = () => {
               </a>
               
               <button 
-                onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-secondary"
+                onClick={() => document.querySelector('#localizacao')?.scrollIntoView({ behavior: 'smooth' })}
+                className="btn-primary"
               >
-                Conheça nossos serviços
+                Como Chegar
               </button>
             </div>
 
             <div className="flex items-center gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">39+</div>
-                <div className="text-sm text-gray-600">Anos de experiência</div>
+                <div className="text-3xl font-heading font-bold text-primary">12x</div>
+                <div className="text-sm text-gray-600">sem juros</div>
               </div>
               <div className="h-12 w-px bg-gray-300"></div>
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">100%</div>
-                <div className="text-sm text-gray-600">Qualidade garantida</div>
+                <div className="text-3xl font-heading font-bold text-primary">20%</div>
+                <div className="text-sm text-gray-600">de desconto à vista</div>
               </div>
               <div className="h-12 w-px bg-gray-300"></div>
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">24h</div>
-                <div className="text-sm text-gray-600">Atendimento</div>
+                <div className="text-3xl font-heading font-bold text-primary">15%</div>
+                <div className="text-sm text-gray-600">de desconto a prazo em até 5x</div>
               </div>
             </div>
           </div>
@@ -78,7 +66,7 @@ const SuperHeroSection = () => {
               <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-secondary rounded-full filter blur-xl"></div>
               <div className="relative z-10 bg-white/90 backdrop-blur-sm shadow-2xl rounded-2xl p-1 transform transition-all duration-500 hover:scale-105">
                 <img 
-                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/lovable-uploads/8bc0200e-2c73-4b31-918d-54eba6d54b4f.png" 
                   alt="Colchões de alta qualidade Super Colchões Santa Maria" 
                   className="rounded-2xl w-full h-auto object-cover"
                 />
