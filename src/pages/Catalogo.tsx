@@ -172,7 +172,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/a4ac202f-3425-408b-bfe9-33453ed3aa12.png" alt="Colchão branco com estrutura" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão Estruturado</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Pillow Top</p>
               
             </div>
           </div>
@@ -202,7 +202,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/d2fac790-b255-48ae-b8b7-8a463adf8e76.png" alt="Travesseiro com embalagem" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro Premium</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro NASA Cervical</p>
               
             </div>
           </div>
@@ -212,7 +212,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/883f4f60-86ff-4325-bee6-f8f80b650049.png" alt="Colchão com base estruturada" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sistema Completo</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Conjunto Box Maxspring</p>
               
             </div>
           </div>
@@ -222,7 +222,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/86b9e010-23d7-4fe3-b932-32c6f4708c89.png" alt="Colchão Castor com padrão decorativo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Castor Decorativo</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Exclusiva Castor</p>
               
             </div>
           </div>
@@ -282,7 +282,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/736ea669-8477-485f-9d71-39ac76a1206a.png" alt="Colchão Zuhaus Stern" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Zuhaus Stern</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Zuhause Premium</p>
               
             </div>
           </div>
@@ -292,7 +292,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/e1a9a8bc-a884-4863-be76-c6213f6ab821.png" alt="Colchão com padrão decorativo na loja" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Decorativa</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas individuias</p>
               
             </div>
           </div>
@@ -312,7 +312,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/919e0308-62cb-4473-95cf-ee41c1053714.png" alt="Colchão branco com detalhes em relevo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Relief</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Pillow Top</p>
               
             </div>
           </div>
@@ -342,7 +342,7 @@ const Catalogo = () => {
               <img src="/lovable-uploads/8000ddc0-4cee-46ea-85c1-a3524f847b64.png" alt="Colchão de molas ensacadas individuais - quarto moderno" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Quarto Moderno</p>
+              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Individuais Premium</p>
               
             </div>
           </div>
