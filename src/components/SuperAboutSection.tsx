@@ -2,7 +2,7 @@ const SuperAboutSection = () => {
   return <section id="sobre" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="font-heading font-bold mb-6">
+          <h2 className="font-heading font-bold mb-6 text-6xl">
             Sobre
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8"></div>
