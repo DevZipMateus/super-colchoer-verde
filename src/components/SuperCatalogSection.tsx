@@ -121,7 +121,51 @@ const SuperCatalogSection = () => {
           </p>
         </div>
 
-        
+        <div className="relative max-w-6xl mx-auto mb-12">
+          {/* Carousel Container */}
+          <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh] max-h-[700px] overflow-hidden rounded-xl shadow-xl bg-white">
+            {/* Image with optimized loading */}
+            <div className="relative w-full h-full">
+              <img src={catalogImages[currentIndex].src} alt={catalogImages[currentIndex].alt} className="w-full h-full object-contain transition-opacity duration-700 ease-in-out" loading="lazy" decoding="async" style={{
+              aspectRatio: 'auto',
+              objectPosition: 'center'
+            }} />
+              
+              {/* Gradient overlay for better text contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+            </div>
+            
+            {/* Navigation buttons with improved accessibility */}
+            <button onClick={goToPrevious} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50 z-10 touch-manipulation" aria-label="Imagem anterior" type="button">
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+            
+            <button onClick={goToNext} className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50 z-10 touch-manipulation" aria-label="Próxima imagem" type="button">
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+            </button>
+
+            {/* Slide counter */}
+            <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-medium">
+              {currentIndex + 1} / {catalogImages.length}
+            </div>
+          </div>
+
+          {/* Improved indicators with horizontal scroll */}
+          <div className="flex justify-center mt-6">
+            <div className="flex items-center space-x-2 overflow-x-auto scrollbar-hide max-w-full px-4">
+              
+            </div>
+          </div>
+
+          {/* Progress bar */}
+          <div className="mt-4 mx-auto max-w-md">
+            <div className="w-full bg-gray-200 rounded-full h-1">
+              <div className="bg-primary h-1 rounded-full transition-all duration-300" style={{
+              width: `${(currentIndex + 1) / catalogImages.length * 100}%`
+            }} />
+            </div>
+          </div>
+        </div>
 
         <div className="text-center">
           <Link to="/catalogo">
