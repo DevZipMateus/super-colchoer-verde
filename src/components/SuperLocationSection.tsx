@@ -11,7 +11,7 @@ const SuperLocationSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-[36px] py-0 my-0 mx-px">
           <div className="space-y-8">
             
 
