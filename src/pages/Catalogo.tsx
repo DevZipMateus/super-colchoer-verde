@@ -1,6 +1,7 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, X, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Catalogo = () => {
@@ -165,273 +166,408 @@ const Catalogo = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(0)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(0)}>
               <img src="/lovable-uploads/b852ea04-4205-475a-b72e-0c2d752bb988.png" alt="Colchão Castor com almofadas vermelhas" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Conjunto Castor Deluxe</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Conjunto Castor Deluxe</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Conjunto%20Castor%20Deluxe" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(1)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(1)}>
               <img src="/lovable-uploads/a4ac202f-3425-408b-bfe9-33453ed3aa12.png" alt="Colchão branco com estrutura" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Pillow Top</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Pillow Top</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Pillow%20Top" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(2)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(2)}>
               <img src="/lovable-uploads/ef67d67d-14b5-4803-aa43-0589463059bb.png" alt="Colchão com padrão floral" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sofa cama</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Sofa cama</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Sofa%20cama" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(3)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(3)}>
               <img src="/lovable-uploads/8d41b138-9898-4424-9c7b-4771e7f7c3ec.png" alt="Detalhe do colchão com padrão em relevo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão Textured</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Colchão Textured</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Colch%C3%A3o%20Textured" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(4)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(4)}>
               <img src="/lovable-uploads/d2fac790-b255-48ae-b8b7-8a463adf8e76.png" alt="Travesseiro com embalagem" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro NASA Cervical</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Travesseiro NASA Cervical</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Travesseiro%20NASA%20Cervical" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(5)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(5)}>
               <img src="/lovable-uploads/883f4f60-86ff-4325-bee6-f8f80b650049.png" alt="Colchão com base estruturada" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Conjunto Box Maxspring</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Conjunto Box Maxspring</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Conjunto%20Box%20Maxspring" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(6)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(6)}>
               <img src="/lovable-uploads/86b9e010-23d7-4fe3-b932-32c6f4708c89.png" alt="Colchão Castor com padrão decorativo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Exclusiva Castor</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Exclusiva Castor</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Exclusiva%20Castor" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(7)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(7)}>
               <img src="/lovable-uploads/029608f7-9f0d-46a6-be16-6c0c9e348205.png" alt="Ambiente da loja com sofás" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Móveis para Sala</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Móveis para Sala</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20M%C3%B3veis%20para%20Sala" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(8)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(8)}>
               <img src="/lovable-uploads/7ac72a69-664e-4ed9-af48-5567bf7b7d97.png" alt="Colchões embalados na loja" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Variedade de Colchões</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Variedade de Colchões</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Variedade%20de%20Colch%C3%B5es" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(9)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(9)}>
               <img src="/lovable-uploads/823e60a2-a086-486d-a82b-36ade0884272.png" alt="Colchão moderno em exposição" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Moderna</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Moderna</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Moderna" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(10)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(10)}>
               <img src="/lovable-uploads/bee8ffa0-04a7-4648-b422-392fae393b45.png" alt="Colchão Hauzestern em exposição" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Hauzestern Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Hauzestern Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Hauzestern%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(11)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(11)}>
               <img src="/lovable-uploads/b127118b-f790-4fbf-914e-0cff22ecf09f.png" alt="Detalhe das camadas do colchão" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Tecnologia Multicamadas</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Tecnologia Multicamadas</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Tecnologia%20Multicamadas" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(12)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(12)}>
               <img src="/lovable-uploads/736ea669-8477-485f-9d71-39ac76a1206a.png" alt="Colchão Zuhaus Stern" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Zuhause Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Zuhause Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Zuhause%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(13)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(13)}>
               <img src="/lovable-uploads/e1a9a8bc-a884-4863-be76-c6213f6ab821.png" alt="Colchão com padrão decorativo na loja" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas individuias</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas individuias</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20individuias" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(14)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(14)}>
               <img src="/lovable-uploads/71924c36-bc75-49a5-a9dc-fc66e35b8aaa.png" alt="Travesseiro de látex" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro Real Látex</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Travesseiro Real Látex</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Travesseiro%20Real%20L%C3%A1tex" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(15)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(15)}>
               <img src="/lovable-uploads/919e0308-62cb-4473-95cf-ee41c1053714.png" alt="Colchão branco com detalhes em relevo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Pillow Top</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Pillow Top</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Pillow%20Top" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(16)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(16)}>
               <img src="/lovable-uploads/4cb4bd30-9d00-4f71-b4f8-39fc40632fd4.png" alt="Poltrona reclinável marrom" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Poltrona Reclinável</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Poltrona Reclinável</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Poltrona%20Reclin%C3%A1vel" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(17)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(17)}>
               <img src="/lovable-uploads/087d8c88-4489-4144-8a18-71898a5e157f.png" alt="Colchão de molas ensacadas individuais - ambiente" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(18)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(18)}>
               <img src="/lovable-uploads/8000ddc0-4cee-46ea-85c1-a3524f847b64.png" alt="Colchão de molas ensacadas individuais - quarto moderno" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Individuais Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Individuais Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Individuais%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(19)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(19)}>
               <img src="/lovable-uploads/dbcaf81b-956a-46e3-b0d7-ab32cf30af11.png" alt="Colchão de molas ensacadas individuais - ambiente luxo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Luxo</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Linha Luxo</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Linha%20Luxo" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(20)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(20)}>
               <img src="/lovable-uploads/586c1b99-c4ec-4f62-b516-4888bd781d0a.png" alt="Colchão de molas ensacadas individuais - branco" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Branco</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Molas Ensacadas Branco</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20as%20Molas%20Ensacadas%20Branco" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(21)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(21)}>
               <img src="/lovable-uploads/43488edc-462a-4fc6-bbbd-7dfd8e1120be.png" alt="Poltrona reclinável bege" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Poltrona Relax Bege</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Poltrona Relax Bege</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20Poltrona%20Relax%20Bege" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(22)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(22)}>
               <img src="/lovable-uploads/f2fa3dde-4033-4955-a30c-f190eb2364b4.png" alt="Box baú marrom com abertura" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box Baú Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box Baú Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20Ba%C3%BA%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(23)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(23)}>
               <img src="/lovable-uploads/939809b3-4ff6-4e4e-bb46-0aca85a7646c.png" alt="Box baú branco aberto" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box Baú Branco</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box Baú Branco</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20Ba%C3%BA%20Branco" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(24)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(24)}>
               <img src="/lovable-uploads/41cabb28-8bb8-4261-a505-0c9f91bc7f2e.png" alt="Sofá-cama com colchão estendido" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sofá-Cama Premium</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Sofá-Cama Premium</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Sof%C3%A1-Cama%20Premium" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(25)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(25)}>
               <img src="/lovable-uploads/28259c71-17b8-429c-9761-47596305758e.png" alt="Conjunto box com cama auxiliar" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box com Cama Auxiliar</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Box com Cama Auxiliar</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Box%20com%20Cama%20Auxiliar" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group" onClick={() => openModal(26)}>
-            <div className="aspect-square overflow-hidden bg-gray-100">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-square overflow-hidden bg-gray-100 cursor-pointer group" onClick={() => openModal(26)}>
               <img src="/lovable-uploads/9017e817-369c-4f48-aa8b-a5436e8fdac5.png" alt="Colchão de espuma com padrão decorativo" className="w-full h-full object-contain group-hover:object-cover group-hover:scale-105 transition-all duration-300" />
             </div>
             <div className="p-4 md:p-6">
-              <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão de Espuma Ortopédico</p>
-              
+              <p className="font-heading font-bold text-lg md:text-xl mb-4 line-clamp-2">Colchão de Espuma Ortopédico</p>
+              <a href="https://wa.me/5555991630055?text=Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20Colch%C3%A3o%20de%20Espuma%20Ortop%C3%A9dico" target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
         </div>
