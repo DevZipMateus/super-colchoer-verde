@@ -158,4 +158,38 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Hide scrollbar for webkit browsers */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Touch optimization */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
+  /* Improved focus styles for accessibility */
+  button:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+}
+
+/* Responsive optimizations */
+@media (max-height: 600px) and (orientation: landscape) {
+  .carousel-container {
+    height: 85vh !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    min-height: 400px;
+  }
 }

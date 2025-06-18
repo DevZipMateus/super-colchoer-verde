@@ -117,23 +117,36 @@ const SuperCatalogSection = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
+    if (!isAutoPlaying) return;
+    
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => 
         prevIndex === catalogImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, [catalogImages.length]);
+  }, [catalogImages.length, isAutoPlaying]);
 
   const goToPrevious = () => {
+    setIsAutoPlaying(false);
     setCurrentIndex(currentIndex === 0 ? catalogImages.length - 1 : currentIndex - 1);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
   };
 
   const goToNext = () => {
+    setIsAutoPlaying(false);
     setCurrentIndex(currentIndex === catalogImages.length - 1 ? 0 : currentIndex + 1);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
+  };
+
+  const goToSlide = (index: number) => {
+    setIsAutoPlaying(false);
+    setCurrentIndex(index);
+    setTimeout(() => setIsAutoPlaying(true), 5000);
   };
 
   return (
@@ -150,48 +163,85 @@ const SuperCatalogSection = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto mb-12">
-          <div className="relative h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-xl shadow-xl">
-            <img
-              src={catalogImages[currentIndex].src}
-              alt={catalogImages[currentIndex].alt}
-              className="w-full h-full object-contain md:object-cover transition-opacity duration-500 bg-white"
-            />
+          {/* Carousel Container */}
+          <div className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh] max-h-[700px] overflow-hidden rounded-xl shadow-xl bg-white">
+            {/* Image with optimized loading */}
+            <div className="relative w-full h-full">
+              <img
+                src={catalogImages[currentIndex].src}
+                alt={catalogImages[currentIndex].alt}
+                className="w-full h-full object-contain transition-opacity duration-700 ease-in-out"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  aspectRatio: 'auto',
+                  objectPosition: 'center',
+                }}
+              />
+              
+              {/* Gradient overlay for better text contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+            </div>
             
-            {/* Navigation buttons */}
+            {/* Navigation buttons with improved accessibility */}
             <button
               onClick={goToPrevious}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-200 z-10"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50 z-10 touch-manipulation"
+              aria-label="Imagem anterior"
+              type="button"
             >
-              <ChevronLeft className="w-4 h-4 md:w-6 md:h-6" />
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             
             <button
               onClick={goToNext}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-1.5 md:p-2 rounded-full shadow-lg transition-all duration-200 z-10"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50 z-10 touch-manipulation"
+              aria-label="Próxima imagem"
+              type="button"
             >
-              <ChevronRight className="w-4 h-4 md:w-6 md:h-6" />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
+
+            {/* Slide counter */}
+            <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm font-medium">
+              {currentIndex + 1} / {catalogImages.length}
+            </div>
           </div>
 
-          {/* Indicators */}
-          <div className="flex justify-center mt-4 space-x-2 overflow-x-auto pb-2">
-            <div className="flex space-x-2 min-w-max px-4">
-              {catalogImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-200 flex-shrink-0 ${
-                    index === currentIndex ? 'bg-primary' : 'bg-gray-300'
-                  }`}
-                />
-              ))}
+          {/* Improved indicators with horizontal scroll */}
+          <div className="flex justify-center mt-6">
+            <div className="flex items-center space-x-2 overflow-x-auto scrollbar-hide max-w-full px-4">
+              <div className="flex space-x-2 min-w-max">
+                {catalogImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary/50 touch-manipulation ${
+                      index === currentIndex 
+                        ? 'bg-primary scale-125 shadow-lg' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Ir para imagem ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Progress bar */}
+          <div className="mt-4 mx-auto max-w-md">
+            <div className="w-full bg-gray-200 rounded-full h-1">
+              <div 
+                className="bg-primary h-1 rounded-full transition-all duration-300"
+                style={{ width: `${((currentIndex + 1) / catalogImages.length) * 100}%` }}
+              />
             </div>
           </div>
         </div>
 
         <div className="text-center">
           <Link to="/catalogo">
-            <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
+            <Button className="btn-primary text-base md:text-lg px-6 md:px-8 py-3 md:py-4 hover:scale-105 transition-transform duration-200">
               Venha conferir nosso catálogo
             </Button>
           </Link>
