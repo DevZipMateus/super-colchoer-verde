@@ -4,6 +4,7 @@ import SuperHeader from '@/components/SuperHeader';
 import SuperHeroSection from '@/components/SuperHeroSection';
 import SuperAboutSection from '@/components/SuperAboutSection';
 import SuperServicesSection from '@/components/SuperServicesSection';
+import SuperCatalogSection from '@/components/SuperCatalogSection';
 import SuperTestimonialsSection from '@/components/SuperTestimonialsSection';
 import SuperLocationSection from '@/components/SuperLocationSection';
 import SuperContactSection from '@/components/SuperContactSection';
@@ -42,6 +43,7 @@ const SuperIndex = () => {
         <SuperHeroSection />
         <SuperAboutSection />
         <SuperServicesSection />
+        <SuperCatalogSection />
         <SuperTestimonialsSection />
         <SuperLocationSection />
         <SuperContactSection />
