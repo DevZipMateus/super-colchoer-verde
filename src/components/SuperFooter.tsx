@@ -1,3 +1,6 @@
+
+import { Instagram } from 'lucide-react';
+
 const SuperFooter = () => {
   return <footer className="text-white py-12 bg-slate-50">
       <div className="container mx-auto px-4">
@@ -61,9 +64,7 @@ const SuperFooter = () => {
                 </svg>
               </a>
               <a href="https://www.instagram.com/super_colchoes/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white hover:from-purple-600 hover:to-pink-600 transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.291C3.85 14.437 3.025 12.759 3.025 10.892c0-1.867.825-3.546 2.101-4.805.875-.801 2.026-1.291 3.323-1.291 1.297 0 2.448.49 3.323 1.291 1.276 1.259 2.101 2.938 2.101 4.805 0 1.867-.825 3.546-2.101 4.805-.875.801-2.026 1.291-3.323 1.291zm7.265-9.209c-.553 0-1.001-.448-1.001-1.001s.448-1.001 1.001-1.001 1.001.448 1.001 1.001-.448 1.001-1.001 1.001z" />
-                </svg>
+                <Instagram className="w-5 h-5" />
               </a>
               <a href="https://www.youtube.com/channel/UCtNbeMmIUFsQ8jSULkOYIcQ" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
