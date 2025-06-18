@@ -1,5 +1,23 @@
 
+import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from '@/components/ui/carousel';
+
 const SuperTestimonialsSection = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+
   const testimonials = [
     {
       name: "Hemely Cassol",
@@ -50,6 +68,47 @@ const SuperTestimonialsSection = () => {
     );
   };
 
+  const toggleExpanded = (index: number) => {
+    const newExpanded = new Set(expandedCards);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedCards(newExpanded);
+  };
+
+  const truncateText = (text: string, maxLength: number = 150) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + '...';
+  };
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section id="depoimentos" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
@@ -63,34 +122,88 @@ const SuperTestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <StarRating rating={testimonial.rating} />
-                <span className="text-sm text-gray-500">{testimonial.date}</span>
+        <div className="max-w-4xl mx-auto">
+          <Carousel
+            setApi={setApi}
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <div className="p-4">
+                    <Card className="h-full">
+                      <CardContent className="p-8">
+                        <div className="flex items-center justify-between mb-4">
+                          <StarRating rating={testimonial.rating} />
+                          <span className="text-sm text-gray-500">{testimonial.date}</span>
+                        </div>
+                        
+                        <div className="mb-6">
+                          <p className="text-gray-700 leading-relaxed italic">
+                            "{expandedCards.has(index) 
+                              ? testimonial.text 
+                              : truncateText(testimonial.text)}"
+                          </p>
+                          {testimonial.text.length > 150 && (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => toggleExpanded(index)}
+                              className="mt-2 text-primary hover:text-primary/80 p-0 h-auto"
+                            >
+                              {expandedCards.has(index) ? (
+                                <>
+                                  <ChevronUp className="w-4 h-4 mr-1" />
+                                  Ler menos
+                                </>
+                              ) : (
+                                <>
+                                  <ChevronDown className="w-4 h-4 mr-1" />
+                                  Ler mais
+                                </>
+                              )}
+                            </Button>
+                          )}
+                        </div>
+                        
+                        <div className="flex items-center">
+                          <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                            <span className="text-primary font-heading font-bold text-lg">
+                              {testimonial.name.charAt(0)}
+                            </span>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                            <p className="text-sm text-gray-500">Cliente verificado</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            <div className="flex items-center justify-center gap-4 mt-8">
+              <CarouselPrevious className="relative inset-0 translate-y-0 translate-x-0 h-10 w-10" />
+              <div className="flex space-x-2">
+                {Array.from({ length: count }).map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      index + 1 === current ? 'bg-primary' : 'bg-gray-300'
+                    }`}
+                    onClick={() => api?.scrollTo(index)}
+                  />
+                ))}
               </div>
-              
-              <p className="text-gray-700 leading-relaxed mb-6 italic">
-                "{testimonial.text}"
-              </p>
-              
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-primary font-heading font-bold text-lg">
-                    {testimonial.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">Cliente verificado</p>
-                </div>
-              </div>
+              <CarouselNext className="relative inset-0 translate-y-0 translate-x-0 h-10 w-10" />
             </div>
-          ))}
+          </Carousel>
         </div>
 
         <div className="text-center mt-12">
