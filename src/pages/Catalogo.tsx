@@ -163,7 +163,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Conjunto Castor Deluxe</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão premium com almofadas decorativas, ideal para um sono reparador.</p>
+              
             </div>
           </div>
 
@@ -173,7 +173,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão Estruturado</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão com tecnologia avançada de suporte e conforto.</p>
+              
             </div>
           </div>
 
@@ -183,7 +183,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sofa cama</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Design elegante com padrão floral, combinando beleza e conforto.</p>
+              
             </div>
           </div>
 
@@ -193,7 +193,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão Textured</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Superfície texturizada para melhor ventilação e conforto.</p>
+              
             </div>
           </div>
 
@@ -203,7 +203,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Travesseiros de alta qualidade para complementar seu sono.</p>
+              
             </div>
           </div>
 
@@ -213,7 +213,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sistema Completo</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão com base estruturada para máximo suporte.</p>
+              
             </div>
           </div>
 
@@ -223,7 +223,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Castor Decorativo</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão Castor com padrão decorativo exclusivo.</p>
+              
             </div>
           </div>
 
@@ -233,7 +233,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Móveis para Sala</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Ambiente completo para sua sala de estar.</p>
+              
             </div>
           </div>
 
@@ -243,7 +243,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Variedade de Colchões</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Grande variedade de colchões disponíveis em nossa loja.</p>
+              
             </div>
           </div>
 
@@ -253,7 +253,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Moderna</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Design moderno e contemporâneo para ambientes atuais.</p>
+              
             </div>
           </div>
 
@@ -263,7 +263,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Hauzestern Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão Hauzestern de alta qualidade em ambiente de exposição.</p>
+              
             </div>
           </div>
 
@@ -273,7 +273,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Tecnologia Multicamadas</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Visualize a tecnologia avançada em camadas dos nossos colchões.</p>
+              
             </div>
           </div>
 
@@ -283,7 +283,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Zuhaus Stern</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão Zuhaus Stern com tecnologia alemã de ponta.</p>
+              
             </div>
           </div>
 
@@ -293,7 +293,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Decorativa</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchões com padrões decorativos elegantes em exposição.</p>
+              
             </div>
           </div>
 
@@ -303,7 +303,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Travesseiro Real Látex</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Travesseiro de látex natural para máximo conforto.</p>
+              
             </div>
           </div>
 
@@ -313,7 +313,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Relief</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão com detalhes em relevo para melhor ergonomia.</p>
+              
             </div>
           </div>
 
@@ -323,7 +323,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Poltrona Reclinável</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Poltrona reclinável em couro para máximo relaxamento.</p>
+              
             </div>
           </div>
 
@@ -333,7 +333,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão de molas ensacadas individuais em ambiente sofisticado.</p>
+              
             </div>
           </div>
 
@@ -343,7 +343,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Quarto Moderno</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Conjunto completo com colchão de molas ensacadas para quarto moderno.</p>
+              
             </div>
           </div>
 
@@ -353,7 +353,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Linha Luxo</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão de molas ensacadas individuais em ambiente de luxo.</p>
+              
             </div>
           </div>
 
@@ -363,7 +363,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Molas Ensacadas Branco</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão de molas ensacadas individuais com acabamento branco elegante.</p>
+              
             </div>
           </div>
 
@@ -373,7 +373,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Poltrona Relax Bege</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Poltrona reclinável em couro bege para momentos de relaxamento.</p>
+              
             </div>
           </div>
 
@@ -383,7 +383,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box Baú Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Box com sistema baú para otimizar o espaço do seu quarto.</p>
+              
             </div>
           </div>
 
@@ -393,7 +393,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box Baú Branco</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Box baú em acabamento branco com amplo espaço de armazenamento.</p>
+              
             </div>
           </div>
 
@@ -403,7 +403,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Sofá-Cama Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Sofá-cama com colchão de alta qualidade para visitas.</p>
+              
             </div>
           </div>
 
@@ -413,7 +413,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Box com Cama Auxiliar</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Conjunto box com cama auxiliar, perfeito para otimizar espaço.</p>
+              
             </div>
           </div>
 
@@ -423,7 +423,7 @@ const Catalogo = () => {
             </div>
             <div className="p-4 md:p-6">
               <p className="font-heading font-bold text-lg md:text-xl mb-2 line-clamp-2">Colchão de Espuma Premium</p>
-              <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">Colchão de espuma de alta densidade com padrão decorativo elegante.</p>
+              
             </div>
           </div>
         </div>
