@@ -12,7 +12,7 @@ const SuperAboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
-              <p className="text-gray-700 leading-relaxed text-4xl">
+              <p className="text-gray-700 leading-relaxed text-3xl">
                 Há 39 anos cuidando do bem-estar e qualidade de vida de nossos clientes. 
                 A Super Colchões investe em produtos de alta qualidade, requinte e conforto. 
                 Pioneira no ramo de colchões em Santa Maria-RS, dispomos de produtos multimarcas, 
